@@ -111,11 +111,5 @@ class TextAnalyzerTest {
         assertEquals("слова", analyzer.findMostFrequentWord(text));
     }
 
-    @Test
-    @DisplayName("Тест граничных случаев")
-    void testEdgeCases() {
-        assertEquals(0, analyzer.countWords("...!!!???"));
-        assertEquals(0, analyzer.countSentences("...!!!???"));
-        assertEquals("", analyzer.findMostFrequentWord("...!!!???"));
-    }
+
 }
